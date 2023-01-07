@@ -1,3 +1,5 @@
 # HTML_developer
-Primeiros passos com HTML 
-Neste repositório resumi todas as minhas anotações sobre o tema, é o meu primeiro projeto HTML.
+
+PRIMEIRO HTML! 
+Como um exercício, criei este arquivo com todas as minhas anotações e conhecimeno sobre o tema, e com explicações de algumas tags. 
+
