@@ -1,138 +1,457 @@
 <!DOCTYPE html>
-<html lang="pt-BR>
-    <head>
-        <title>Meu primeiro HTML!(parte1)</title>
-    </head>
+<html lang="pt-BR">
 
-<body>
-      <h1><center><strong style="color: rgb(57, 23, 138);">Primeiros passos em HTML</strong></center></h1>
-       <p>Olá caro leitor, sou iniciante no mundo da programação, com o intuito de ajudar a quem também está dando os seus primeiros passos como Dev, elaborei este arquivo HTML com todas as minhas anotações gerais de pesquisas sobre o assunto, e também anotações do curso "Formação HTML Web Developer" (seção: primeiros passos com HTML), espero que esse arquivo lhe seja útil.</p>
-       <small>:) Bons estudos! :)</small>
+<head>
+    <title>Meu primeiro HTML!(parte1)</title>
+</head>
 
-    <h2 id="Indice"><strong><u>Índice</u></strong></h2>
-       <ol>
-        <li><a href="#Gerações">Gerações de computadores</a></li>
-        <li><a href="#Surgimento">Surgimento da web</a></li>
-        <li><a href="#Clientes">Clientes na web</a></li>
-        <li><a href="#Client">Client-side</a></li>
-        <li><a href="#Navegadores">Navegadores</a></li>
-        <li><a href="#aplicações">Aplicações web x Dispositivos móveis</a></li>
-        <li><a href="#server">Sobre servidores</a></li>
-        <li><a href="#tipos">Tipos de servidores</a></li>
-        <li><a href="#diferenças">Diferenças de hardware e software nos servidores</a></li>
-        <li><a href="#hospedagem">Hospedagem de sites</a></li>
-        <li><a href="#serv">Server-side</a></li>
-        <li><a href="#linguagem">O que é linguagem de programação?</a></li>
-        <li><a href="#oqe">HTML não é linguagem de programação</a></li>
-        <li><a href="#tools">Ferramentas utilizadas</a></li>
-        <li><a href="#estrutura">estrutura básica do HTML</a></li>
-        <li><a href="#tags">Tags</a></li>
-        <li><a href="#textos">Textos</a></li>
-        <li><a href="#listas">Listas</a></li>
-        <li><a href="#links">Links</a></li>
-       </ol>
+<body style="background-color:rgb(110, 112, 241);">
+    <font face="calibri" color="white">
+        <h1>
+            <center><strong style="color: rgb(25, 0, 85);">Primeiros passos em HTML</strong></center>
+        </h1>
+        <hr>
+        <p>
+            Olá caro leitor, sou iniciante no mundo da programação, com o intuito de ajudar a quem também está dando os
+            seus
+            primeiros passos como Dev,
+            elaborei este arquivo HTML com todas as minhas anotações gerais de pesquisas sobre o assunto, e também
+            anotações
+            do curso
+            "Formação HTML Web Developer" (seção: primeiros passos com HTML), espero que esse arquivo lhe seja útil.
+        </p>
+        <small>
+            <center>
+                😃Bons estudos!😃
+            </center>
+        </small>
 
-    <h3 id="Gerações"><center><u>GERAÇÕES DE COMPUTADORES</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-    <p><ul>
-        <li>1 Geração (1944-1959): marcada pelos computadores Harvard Mark 1(1944), Colossus (1946) e ENIAC (1946), os computadores eram gigantescos e ocupavam salas enormes, continham um grande número de Válvulas e Painéis,também faziam o uso de Plug's, nesta epoca surgiu o termo "bug".</li>
-        <li>2 Geração (1959-1965): marcada pela subtituição das válvulas pelos transistores e sistemas batch.</li>
-        <li>3 Geração (1965-1970): circuitos integrados,diminuição do tamanho dos computadores, com transistores, capacitores e multiprogramação.</li>
-        <li>4 Geração (1971-atualmente):marcada pelo uso de personal computer, etc.</li>
-        <li>5 Geração: Algumas pessoas dizem que já estamos nela, é marcada por cryptomoedas, metaverso, IA, computadores quanticos, etc.</li>
-    </ul></p>
+        <h2 id="Indice"><strong><u>Índice</u></strong></h2>
+        <ol>
+            <li><a href="#Gerações">Gerações de computadores</a></li>
+            <li><a href="#Surgimento">Surgimento da web</a></li>
+            <li><a href="#Clientes">Clientes na web</a></li>
+            <li><a href="#Client">Client-side</a></li>
+            <li><a href="#Navegadores">Navegadores</a></li>
+            <li><a href="#aplicações">Aplicações web x Dispositivos móveis</a></li>
+            <li><a href="#server">Sobre servidores</a></li>
+            <li><a href="#tipos">Tipos de servidores</a></li>
+            <li><a href="#diferenças">Diferenças de hardware e software nos servidores</a></li>
+            <li><a href="#hospedagem">Hospedagem de sites</a></li>
+            <li><a href="#serv">Server-side</a></li>
+            <li><a href="#linguagem">O que é linguagem de programação?</a></li>
+            <li><a href="#oqe">HTML não é linguagem de programação</a></li>
+            <li><a href="#tools">Ferramentas utilizadas</a></li>
+            <li><a href="#estrutura">estrutura básica do HTML</a></li>
+            <li><a href="#tags">Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#atributos">Atributos de tags</a></li>
+        </ol>
 
-    <h3 id="Surgimento"><center><u>SURGIMENTO DA WEB</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-       <h5><center>A internet é basicamente, um sistema de comunicação, que evolui de forma paralela aos computadores</center></H5>
-       <p>O primeiro sistema de comunicação a surgir é o telégrafo, junto com o código morse na guerra fria (1950),e isso explodiu a tecnologia, neste cenário, também temos o ENIAC, que fazia calculo para o lançamento de mísseis</p>
-       <p>Ainda neste cenário de guerra fria, depois de muitas pesquisas e evoluções surge a ARPA ( atual ARPANET), com avanços em sistemas de comunicação em pacotes ( enviados um a um e que permitiam multiplos destinos) e estudos sobre nos, pontos de intersessão funcionando como check points (avõ dos roteadores)</p>
-       <p>A primeira palavra trafegada na internet foi 'LO', era pra ser LOGIN, mas a palavra não chegou ao outro ponto inteira devido a uma falha na conexão, que foi feita somente entre um ponto e outro. Com o passar do tempo, houve a criação do protocolo TCP IP, e foram surgindo mais pontos de conecção da ARPANET.</p>
-       <p><strong>PROTOCOLO TCP/IP:</strong> Resumidamente, são conjuntos de protocolos que visam a conexão dos dispositivos, eles garantem que pacotes de informações cheguem a seu destino de maneira correta e segura, por meio disso toda a internet é endereçada, pois viabiliza troca de informações com as mais variadas origens e seus respectivos destinos.</p>
-       <p><strong>WORLD WIDE WEB - WEB - WWW:</strong> È um sistema de documentos, que podem estar na forma de vídeos, sons, hipertextos, imagens, etc, que estão distribuidos na internet, em termos gerais, é a interface gráfica da internet, onde as informações podem ser facilmente distribuidas através de hipertextos, que são codificados em HTML, que é interpretado pelos navegadores e que passa a informação das páginas aos usuários. O WWW parece sinônimo de internet, mas em essência não é, pois a internet em si é a conexão que é feita pela rede de computadores, entre diversos servidores e clientes espalhados pelo mundo, e o WWW é o conteúdo e organização das informações trafegadas dentro dessa rede.</p>
-       <ul>
-        <li><a href=" http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">Primeira pagina publicada na web</a>   
-        </li>
-       </ul>
+        <h3 id="Gerações">
+            <center><u style="color: rgb(25, 0, 85);">GERAÇÕES DE COMPUTADORES</u></center>
+        </h3>
+        <small><a href="#Indice">(Voltar)</a></small>
+        <p>
+        <ul>
+            <li>1 Geração (1944-1959): marcada pelos computadores Harvard Mark 1(1944), Colossus (1946) e ENIAC (1946),
+                os
+                computadores eram gigantescos e ocupavam salas enormes, continham um grande número de Válvulas e
+                Painéis,também faziam o uso de Plug's, nesta epoca surgiu o termo "bug".</li>
+            <li>2 Geração (1959-1965): marcada pela subtituição das válvulas pelos transistores e sistemas batch.</li>
+            <li>3 Geração (1965-1970): circuitos integrados,diminuição do tamanho dos computadores, com transistores,
+                capacitores e multiprogramação.</li>
+            <li>4 Geração (1971-atualmente):marcada pelo uso de personal computer, etc.</li>
+            <li>5 Geração: Algumas pessoas dizem que já estamos nela, é marcada por cryptomoedas, metaverso, IA,
+                computadores quanticos, etc.</li>
+        </ul>
+        </p>
 
-    <h3 id="Clientes"><center><u>CLIENTES NA WEB</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-       <p><strong>CLIENTE:</strong>È quando o usuário consome a informação ( dados que serão solicitados ao servidor, e/ou modificados) provinda de um servidor conectado através da internet, um exemplo comum de clientes são os celurares e PC's convencionais, onde atravéz deles fazemos pesquisas na internet, usamos as redes sociais, jogamos online e etc, em todas essas ações, solicitamos dados de servidores para "carregar" as páginas e outros recursos que precisamos, por isso dizemos que a internet é uma rede mundial de computadores ( clientes e servidores conectados)</p>
-       <h3 id="Client"><U>CLIENT-SIDE - LINGUAGEM DO CLIENTE - CLIENT SIDE SCRIPTING:</U> São as linguagens executadas no lado do cliente, nas situações que a linguagem Server-side não alcança, e essa linguagen apenas o navegador vai entender</h3>
+        <h3 id="Surgimento">
+            <center><u style="color: rgb(25, 0, 85);">SURGIMENTO DA WEB</u></center>
+        </h3>
+        <small><a href="#Indice">(Voltar)</a></small>
+        <h5>
+            <center>A internet é basicamente, um sistema de comunicação, que evolui de forma paralela aos computadores
+            </center>
+        </H5>
+        <p>O primeiro sistema de comunicação a surgir é o telégrafo, junto com o código morse na guerra fria (1950),e
+            isso
+            explodiu a tecnologia, neste cenário, também temos o ENIAC, que fazia calculo para o lançamento de mísseis.
+        </p>
+        <p>Ainda neste cenário de guerra fria, depois de muitas pesquisas e evoluções surge a ARPA ( atual ARPANET), com
+            avanços em sistemas de comunicação em pacotes ( enviados um a um e que permitiam multiplos destinos) e
+            estudos
+            sobre nós, pontos de intersessão funcionando como check points (avõ dos roteadores).</p>
+        <p>A primeira palavra trafegada na internet foi 'LO', era pra ser LOGIN, mas a palavra não chegou ao outro ponto
+            inteira devido a uma falha na conexão, que foi feita somente entre um ponto e outro. Com o passar do tempo,
+            houve a criação do protocolo TCP IP, e foram surgindo mais pontos de conecção da ARPANET.</p>
+        <p><strong>PROTOCOLO TCP/IP:</strong> Resumidamente, são conjuntos de protocolos que visam a conexão dos
+            dispositivos, eles garantem que pacotes de informações cheguem a seu destino de maneira correta e segura,
+            por
+            meio disso toda a internet é endereçada, pois viabiliza troca de informações com as mais variadas origens e
+            seus
+            respectivos destinos.</p>
+        <p><strong>WORLD WIDE WEB - WEB - WWW:</strong> È um sistema de documentos, que podem estar na forma de vídeos,
+            sons, hipertextos, imagens, etc, que estão distribuidos na internet, em termos gerais, é a interface gráfica
+            da
+            internet, onde as informações podem ser facilmente distribuidas através de hipertextos, que são codificados
+            em
+            HTML, que é interpretado pelos navegadores e que passa a informação das páginas aos usuários. O WWW parece
+            ser
+            sinônimo de internet, mas em essência não é, pois a internet em si é a conexão que é feita pela rede de
+            computadores, entre diversos servidores e clientes espalhados pelo mundo, e o WWW é o conteúdo e organização
+            das
+            informações trafegadas dentro dessa rede.</p>
+        <ul>
+            <li><a href=" http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">Primeira pagina publicada
+                    na
+                    web</a>
+            </li>
+        </ul>
+
+        <h3 id="Clientes">
+            <center><u style="color: rgb(25, 0, 85);">CLIENTES NA WEB</u></center>
+        </h3>
+        <small><a href="#Indice">(Voltar)</a></small>
+        <p><strong>CLIENTE:</strong>È quando o usuário consome a informação ( dados que serão solicitados ao servidor,
+            e/ou
+            modificados) provinda de um servidor conectado através da internet, um exemplo comum de clientes são os
+            celurares e PC's convencionais, onde atravéz deles fazemos pesquisas na internet, usamos as redes sociais,
+            jogamos online e etc, em todas essas ações, solicitamos dados de servidores para "carregar" as páginas e
+            outros
+            recursos que precisamos, por isso dizemos que a internet é uma rede mundial de computadores ( clientes e
+            servidores conectados).</p>
+        <center>
+            <h3 id="Client" style="color: rgb(25, 0, 85);">CLIENT-SIDE - LINGUAGEM DO CLIENTE - CLIENT SIDE SCRIPTING
+            </h3>
+        </center>
+        <p>São as linguagens executadas no lado do cliente, nas situações que a linguagem Server-side não alcança, e
+            essa
+            linguagen apenas o navegador vai entender.</p>
         <ul>
             <li>HTML (xHTML, HTML4, HTML5...), CSS (CSS2.1, CSS3...), JavaScript. Etc.</li>
         </ul>
 
-    <h3 id="Navegadores"><center><u>NAVEGADORES</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-       <p>  Os navegadores (browsers) são responsáveis por interpretar os arquivos do servidor (HTML, java, CSS, etc) inteles fazem isso de forma padronizada, mas as vezes pode acontecer de algumas informações se comportarem de maneiras  diferentes de um navegador para o outro, esses problemas de responsividade e compatibilidade podem ser resolvidos com boas praticas e testes.</p>
-       <p><u>DESIGN RESPONSIVO OU RESPONSIVIDADE:</u>  Diferentes resoluções e distribuições de elementos na tela devem ser consideradas, pois usamos diferentes dispositivos para acessar as informações de um mesmo servidor</p>
-       <ul>
-         <li><strong>W3c:</strong>Onde resumidamente, os executivos de grandes corporações que mantem os navegadores, estipulam padrões a serem seguidos por todos os navegadores.</li>
-         <li>O primeiro navegador foi criado por Tim Berners-Lee, que inventou o WWW, inclusive, o nome deste navegador era WWW.</li>
-       </ul>
-
-    <h3 id="aplicações"><center><u>APLICAÇÕES WEB X DISPOSITIVOS MÓVEIS</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-       <p>: Uma solução que é executada diretamente no browser, não sendo preciso realizar uma instalação na máquina do usuário. outra definição é: “tudo aquilo que é processado em um servidor terceiro”. As plataformas de e-commerce e as redes sociais são alguns dos exemplos que se enquadram nesse perfil, e o servidor pode ser apenas o servidor, ou ele pode também se conectar com o banco de dados, o lado do cliente não tem essa capacidade, na verdade, os navegadores possuem os bancos, mas é coisa mínima, e não é considerado um banco de dados robusto para aplicações web.</p>
-       <p>  Para que uma aplicação web funcione, ela depende de um servidor web, de solicitações realizadas pelos usuários, do uso de protocolos e métodos (normalmente o HTTP) e da resposta do protocolo.Um exemplo de app web é o spotfy, apesar de termos ele instalado no pc, as informações dele são da internet, pois as musicas não ficam gravadas no computador, mas na internet. </p>
-       <p>  Quando um app é acessado pelo navgador, é uma aplicação web, mas quando esse mesmo app é instalado no dispositivo, não é mais uma aplicação web, e para aplicações instaladas, outras linguagens serão usadas.</p>
-
-    <h3 id="server"><center><u>SOBRE SERVIDORES</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>  
-       <p>  Onde se hospedam os sites, servem as informações para os clientes,quando  fazemos uma pesquisa, entramos na internet,  "batenos" no servidor, e ele te retorna arquivos HTML, CSS< Javascript, imagens, audios...esses arquivos são chamados de arquivos estáticos(aruivos enviado do servidor para o cliente, são arquivos que são enviados ao navegador exatamente como estão no HD do servidor)e a expeiencia do usurário será afetada pela velocidade de conexão, e o navegador gera o que chamamos de cache, que são arquivos do servidor armazenados no pc do cliente, quando  acessarmos novamente a mesma página, não se vai no servidor buscar de novo as informações que são estáticas ( que não mudam),e também, nos navegadores é implementado o refresh (atualize a pagina) ele vai novamente ao servidor e busca atuaizaçoes da página.</p>
-       <P>  Servidores pra internet usam a conexão da internet, para fazer a comunicação entre eles. mas não significa dizer que ele só é acessivel pela internet, pois ele pode ser um servidor dentro de uma rede local, onde existe um computador central que ficam armazenados alguns tipos de arquivos, essa máquina é um servidor que serve de apoio para as outras máquinas da rede, isso é chamado de rede local, um exemplo de servidor domestico é quando temos somente um gabinete, onde os outros dispositivos mandam informações para ele.]
-        È comum um mesmo servidor ser varios tipos de servidores ao mesmo tempo, mas não é muito víavel, pois quando solicitamos várias requisições, as outras podem falhar ou ficar lentas, pois a máquina precisa processar muitas coisas ao mesmo tempo, o ideal seria ter um servidor para cada coisa.</P>
-
-       <h4 id="tipos"><center>TIPOS DE SERVIDORES</center></h4>  
+        <h3 id="Navegadores">
+            <center><u style="color: rgb(25, 0, 85);">NAVEGADORES</u></center>
+        </h3>
+        <small><a href="#Indice">(Voltar)</a></small>
+        <p> Os navegadores (browsers) são responsáveis por interpretar os arquivos do servidor (HTML, java, CSS, etc)
+            eles
+            fazem isso de forma padronizada, mas as vezes pode acontecer de algumas informações se comportarem de
+            maneira
+            diferente de um navegador para o outro.</p>
+        <p><u>DESIGN RESPONSIVO OU RESPONSIVIDADE:</u> Diferentes resoluções e distribuições de elementos na tela devem
+            ser
+            consideradas, pois usamos diferentes dispositivos para acessar as informações de um mesmo servidor,esses
+            problemas de responsividade e compatibilidade podem ser resolvidos com boas praticas e testes.</p>
         <ul>
-            <li><u>DE ARQUIVOS:</u>Um computador que centraliza as i.magens, audios, vídeos, etc, onde todos que estiverem conectados a tal rede conseguem acessar esses arquivos.</li>
-            <li><u>PROXY:</u>: Está entre os clientes e outro servidor, por exemplo: uma empresa que quer bloquear o acesso a sites maliciosos, o proxy vai prover a internet aos funcionários com algumas regras, ele é um intermediario, realiza uma ponte entre a requisição do cliente com o servidor da web desejado. Sem ele, a solicitação é enviada diretamente ao servidor web, o que pode acarretar alguns perigos. Todavia, ele não tem apenas essa função, sendo utilizado também para manter a privacidade do usuário mascarando seu IP, além de armazenar dados, monitorar o acesso e demais funcionalidades. ou seja, antes de o funcionario "bater" na internet para entrar num site, o proxy irá dizer se ele pode entrar nesse site ou não, pode ser também usado para autenticação, ele analisa usuários e senhas e faz um proceso de validação, determinando o que cada um pode acessar ou ver.</li>
-            <li><U>FIREWALL:</U>È considerado  um servidor, mas com outro formato, forma uma barreira em redes de computadores para controlar o fluxo de dados entre um link da internet e a rede interna. Com isso, evitam-se roubos de informações empresariais e pessoais. Basicamente, filtra os dados que chegam na rede interna protegida por ele.</li>
-            <li><u>A maior diferença entre Proxy e Firewall: </u>O frirewall impede o acesso a certos sites, o proxy não impede, mas somente filtra o que vem da internet, e fica como um intermediário entre o cliente e servidor web pra fins de anonimato, cache, filtro de navegação, e é importante ressaltar que esses dois podem estar na mesma máquina. </li>
-            <li><U>SERVIDOR DNS (DOMAIN NAME SERVICE):</U>): È um servidor que detem uma lista de nomes e IPs  (registro de todos os domínios da internet), não hospeda os sites, mas permite que as requisições cheguem aos lugares corretos, ele é basicamente, feito para a tradução de domínios para endereços de IP's.</li>
-            <li><u>FTP:</u>  É composto pelo conjunto de regras que diz para os computadores como transferir arquivos de forma simultânea entre diferentes sistemas online, esses arquivos não possuem nenhum tipo de criptografia, portanto não é tão seguro. O FTP pode ser usado dentro de uma rede interna de computadores, ou online entre diferentes servidores web.</li>
-            <li><u>INTRANET:</u>Quando um site está disponível somente dentro de uma rede específica, essa rede corporativa se chama intranet, onde um servidor que ira servir as paginas para os clientes.</li>
-            <li>Existe o servidor, que quando  acessamos a internet para entrar numa aplicação web, bate na web server/aplication server, e esse servidor tem o contato de outro servidor onde se encontra todo o banco de dados.</li>
+            <li><strong>W3c:</strong>Onde resumidamente, os executivos de grandes corporações que mantem os navegadores,
+                estipulam padrões a serem seguidos por todos os navegadores.</li>
+            <li>O primeiro navegador foi criado por Tim Berners-Lee, que inventou o WWW, inclusive, o nome deste
+                navegador
+                era WWW.</li>
         </ul>
 
-    <h3 id="diferenças"><center><u>DIFERENÇAS DE HARDWARE E SOFTWARE EM SERVIDORES</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small> 
-        <p>O servidor tende a ser um computador mais robusto, pois exige maior processamento e comunicação entre varios dispositivos, servidores podem ser simples como um gabinete, ou gigantescos que ocupam salas (data centers).</p>
-        <p>Os servidores utilizam SO's com recursos voltados para servidores ( windows server, ubuntu, centOS, Fedora, Debian, Oracle, Linux  (* todos esses SO's citados são distribuições open source do Linux, exceto o win server) e servidores web (Apach, Nginx). Quanto aos servidoresde sites da web, existem os programas que dão apoio ao sistema operacional, quando ocorrer uma requisição ao servidor web, o sistema opreacional ira executar aquele programa específico, e esse programa irá fazer o processamento da informação/requisição.</p>
+        <h3 id="aplicações">
+            <center><u style="color: rgb(25, 0, 85);">APLICAÇÕES WEB X DISPOSITIVOS MÓVEIS</u></center>
+        </h3>
+        <small><a href="#Indice">(Voltar)</a></small>
+        <p> Uma solução que é executada diretamente no browser, não sendo preciso realizar uma instalação na máquina do
+            usuário. outra definição é: “tudo aquilo que é processado em um servidor terceiro”. As plataformas de
+            e-commerce
+            e as redes sociais são alguns dos exemplos que se enquadram nesse perfil, e o servidor pode ser apenas o
+            servidor, ou ele pode também se conectar com o banco de dados, o lado do cliente não tem essa capacidade, na
+            verdade, os navegadores possuem os bancos, mas é coisa mínima, e não é considerado um banco de dados robusto
+            para aplicações web.</p>
+        <p> Para que uma aplicação web funcione, ela depende de um servidor web, de solicitações realizadas pelos
+            usuários,
+            do uso de protocolos e métodos (normalmente o HTTP) e da resposta do protocolo.Um exemplo de app web é o
+            spotfy,
+            apesar de termos ele instalado no pc, as informações dele são da internet, pois as musicas não ficam
+            gravadas no
+            computador, mas na internet. </p>
+        <p> Quando um app é acessado pelo navgador, é uma aplicação web, mas quando esse mesmo app é instalado no
+            dispositivo, deixa de ser uma aplicação web, e para essas aplicações instaladas, outras linguagens serão
+            usadas.
+        </p>
 
-        <h3 id="serv"><center><u>SERVER-SIDE</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-        <p>A linguagem server-side, basicamente, recebe o requerimento e faz o processamento. Depois, transforma o resultado em um XHTML e envia para o navegador, alguns exemploos de linguagens são: java, php, ruby, c#, js.</p>
+        <h3 id="server">
+            <center><u style="color: rgb(25, 0, 85);">SOBRE SERVIDORES</u></center>
+        </h3>
+        <small><a href="#Indice">(Voltar)</a></small>
+        <p> Onde se hospedam os sites, servem as informações para os clientes,quando fazemos uma pesquisa, entramos na
+            internet, "batemos" no servidor, e ele te retorna arquivos HTML, CSS< Javascript, imagens, audios... esses
+                arquivos são chamados de arquivos estáticos(arquivos enviados do servidor para o cliente, são arquivos
+                que são enviados ao navegador exatamente como estão no HD do servidor) e a expeiencia do usurário será
+                afetada pela velocidade de conexão, e o navegador gera o que chamamos de cache, que são arquivos do
+                servidor armazenados no pc do cliente, quando acessarmos novamente a mesma página, não se vai no
+                servidor buscar de novo as informações que são estáticas ( que não mudam),e também, nos navegadores é
+                implementado o refresh (atualize a pagina) ele vai novamente ao servidor e busca atuaizações da
+                página.</p>
+                <P> Servidores para a internet usam a conexão da internet para fazer a comunicação entre eles. mas não
+                    significa dizer que ele só é acessivel pela internet, pois ele pode ser um servidor dentro de uma
+                    rede
+                    local, onde existe um computador central que ficam armazenados alguns tipos de arquivos, essa
+                    máquina é
+                    um servidor que serve de apoio para as outras máquinas da rede, isso é chamado de rede local, um
+                    exemplo
+                    de servidor domestico é quando temos somente um gabinete, onde os outros dispositivos mandam
+                    informações
+                    para ele.
+                    È comum um mesmo servidor ser varios tipos de servidores ao mesmo tempo, mas não é muito víavel,
+                    pois
+                    quando solicitamos várias requisições, as outras podem falhar ou ficar lentas, pois a máquina
+                    precisa
+                    processar muitas coisas ao mesmo tempo, o ideal seria ter um servidor para cada coisa.</P>
 
-    <h3 id="hospedagem"><center><u>HOSPEDAGEM DE SITES</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-        <p>: É basicamente hospedar o  site em um servidor que fique disponível na internet para os clientes acessarem, algumas empresas oferecem planos de hospedagem com certificados SSl, (conexão segura - https, com criptografia de ponta a ponta). Há também empresas que vendem planos de hospedagem de arquivos para conexões FTP. </p>
+                <h4 id="tipos">
+                    <center style="color: rgb(25, 0, 85);">TIPOS DE SERVIDORES</center>
+                </h4>
+                <ul>
+                    <li><u>DE ARQUIVOS:</u> Um computador que centraliza as imagens, audios, vídeos, etc, onde todos que
+                        estiverem conectados a tal rede conseguem acessar esses arquivos.</li>
+                    <li><u>PROXY:</u> Está entre os clientes e outro servidor, por exemplo: uma empresa que quer
+                        bloquear o
+                        acesso a sites maliciosos, o proxy vai prover a internet aos funcionários com algumas regras,
+                        ele é
+                        um intermediario, realiza uma ponte entre a requisição do cliente com o servidor da web
+                        desejado,
+                        sem ele, a solicitação é enviada diretamente ao servidor web, o que pode acarretar alguns
+                        perigos.
+                        Todavia, ele não tem apenas essa função, sendo utilizado também para manter a privacidade do
+                        usuário
+                        mascarando seu IP, além de armazenar dados, monitorar o acesso e demais funcionalidades, ou
+                        seja,
+                        antes de o funcionário "bater" na internet para entrar num site, o proxy irá dizer se ele pode
+                        entrar nesse site ou não, pode ser também usado para autenticação, ele analisa usuários e senhas
+                        e
+                        faz um proceso de validação, determinando o que cada um pode acessar.</li>
+                    <li><U>FIREWALL:</U> È considerado um servidor, mas com outro formato, forma uma barreira em redes
+                        de
+                        computadores para controlar o fluxo de dados entre um link da internet e a rede interna. Com
+                        isso,
+                        evitam-se roubos de informações empresariais e pessoais. Basicamente, filtra os dados que chegam
+                        na
+                        rede interna protegida por ele.</li>
+                    <li><u>A maior diferença entre Proxy e Firewall: </u>O frirewall impede o acesso a certos sites, o
+                        proxy
+                        não impede, mas somente filtra o que vem da internet, e fica como um intermediário entre o
+                        cliente e
+                        servidor web pra fins de anonimato, cache, filtro de navegação, e é importante ressaltar que
+                        esses
+                        dois podem estar na mesma máquina. </li>
+                    <li><U>SERVIDOR DNS (DOMAIN NAME SERVICE):</U> È um servidor que detem uma lista de nomes e IPs
+                        (registro de todos os domínios da internet), não hospeda os sites, mas permite que as
+                        requisições
+                        cheguem aos lugares corretos, ele é basicamente, feito para a tradução de domínios para
+                        endereços de
+                        IP's.</li>
+                    <li><u>FTP:</u> É composto pelo conjunto de regras que diz para os computadores como transferir
+                        arquivos
+                        de forma simultânea entre diferentes sistemas online, esses arquivos não possuem nenhum tipo de
+                        criptografia, portanto não é tão seguro. O FTP pode ser usado dentro de uma rede interna de
+                        computadores, ou online entre diferentes servidores web.</li>
+                    <li><u>INTRANET:</u> Quando um site está disponível somente dentro de uma rede específica, essa rede
+                        corporativa se chama intranet, onde um servidor que ira servir as paginas para os clientes.</li>
+                    <li>Existe o servidor, que quando acessamos a internet para entrar numa aplicação web, bate na web
+                        server/aplication server, e esse servidor tem o contato de outro servidor onde se encontra todo
+                        o
+                        banco de dados da aplicação.</li>
+                </ul>
 
-    <h3 id="linguagem"><center><u>O QUE É LINGUAGEM DE PROGRAMAÇÃO?</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-        <P>Linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas, *a linguagem de programação não vai resolver o problema, quem vai resolver o problema é o desenvolvedor usando as linguagens, vale ressaltar que cada linguagem se sai melhor em determinados aspectos.</P>
-        <p><u>LINGUAGEM DE ALTO NÍVEL:</u>Estão mais próximas da linguagem humana do que a das máquinas (compostas por 0 e 1),feitas por pulsos elétricos, que somente cientistas entendiam.</p>
-        <p><u> HTML NÃO É UMA LINGUAGEM DE PROGRAMAÇÃO</u>,pois não pode criar funcionalidades dinâmicas, HTML é basicamnete um arquivo de texto de marcação, que possui delimitadores que vão ser interpretados pelo navegador. cada um desses delimitadores possui um comportamento, ou seja, apenas estrutura um conjunto de seções, o mesmo se aplica para um arquivo CSV.</p>
+                <h3 id="diferenças">
+                    <center><u style="color: rgb(25, 0, 85);">DIFERENÇAS DE HARDWARE E SOFTWARE EM SERVIDORES</u>
+                    </center>
+                </h3>
+                <small><a href="#Indice">(Voltar)</a></small>
+                <p>O servidor tende a ser um computador mais robusto, pois exige maior processamento e comunicação entre
+                    varios dispositivos, servidores podem ser simples como um gabinete, ou gigantescos que ocupam salas
+                    (data centers).</p>
+                <p>Os servidores utilizam SO's com recursos voltados para servidores ( windows server, ubuntu, centOS,
+                    Fedora, Debian, Oracle, Linux (* todos esses SO's citados são distribuições open source do Linux,
+                    exceto
+                    o win server) e servidores web (Apach, Nginx). Quanto aos servidores de sites da web, existem os
+                    programas que dão apoio ao sistema operacional, quando ocorrer uma requisição ao servidor web, o
+                    sistema
+                    opreacional ira executar aquele programa específico, e esse programa irá fazer o processamento da
+                    informação/requisição.</p>
 
-    <h3><center><u>INTRODUÇÃO AO HTML NA PRÁTICA</u></center></h3>
-    <small><a href="#Indice">(Voltar)</a></small>
-     <h5 id="tools"><CEnter><U>FERRAMENTAS UTILIZADAS</U></CEnter></H5>
-        <ul>
-            <li><u>GOOGLE CHOME:</u> <a href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Site para Download do Chrome</a> para download e instalação via CMD, usar o comando: winget install --id=Google.Chrome  -e.</li>
-            <li><u>INSPETOR DE ELEMENTOS</u>Ferramenta do Chrome,<a href="https://www.youtube.com/watch?v=KMZKWCcTkm4" target="_blank">Vídeo explicativo do Chrome dev tools.</a></li>
-            <li><u>VISUAL STUDIO CODE:</u><a href="https://code.visualstudio.com/" target="blank">Site para Download do VSCode</a>, para download e instalação via CMD, usar o comando: winget install --id=Microsoft.VisualStudioCode  -e. <a href="https://www.youtube.com/watch?v=uxln1hT_Ev4" target="_blank">Vídeo explicativo do VSCode.</a></li>
-            <li><u>EXTENÕES DO VISUALSTUDIO CODE: Emmet e Live Server.</u></li>
-            <li><U>QUALQUER BLOCO DE NOTAS</U></li>
-            <li><a href="https://www.w3schools.com/tags/ref_html_browsersupport.asp" target="_blank"> Este site mostra quais comandos certos navegadores suportam ou não.</a></li>
-            <li><a href="https://www.w3schools.com/TAGS/default.asp" target="_blank">Lista de comandos HTML</a></li>
-        </ul>
-     
-    <h5 id="estrutura"><CEnter><U>ESTRUTURA BÁSICA DO HTML</U></CEnter></H5>
-            <ul>
-                <li> <img src="image.png" 
-                </li>
+                <h3 id="serv">
+                    <center><u style="color: rgb(25, 0, 85);">SERVER-SIDE</u></center>
+                </h3>
+                <small><a href="#Indice">(Voltar)</a></small>
+                <p>A linguagem server-side, basicamente, recebe o requerimento e faz o processamento. Depois, transforma
+                    o
+                    resultado em um XHTML e envia para o navegador, alguns exemploos de linguagens são: java, php, ruby,
+                    c#,
+                    js.</p>
 
-     </body>
+                <h3 id="hospedagem">
+                    <center><u style="color: rgb(25, 0, 85);"> HOSPEDAGEM DE SITES</u></center>
+                </h3>
+                <small><a href="#Indice">(Voltar)</a></small>
+                <p>: É basicamente hospedar o site em um servidor que fique disponível na internet para os clientes
+                    acessarem, algumas empresas oferecem planos de hospedagem com certificados SSl, (conexão segura -
+                    https,
+                    com criptografia de ponta a ponta). Há também empresas que vendem planos de hospedagem de arquivos
+                    para
+                    conexões FTP. </p>
+
+                <h3 id="linguagem">
+                    <center><u style="color: rgb(25, 0, 85);">O QUE É LINGUAGEM DE PROGRAMAÇÃO?</u></center>
+                </h3>
+                <small><a href="#Indice">(Voltar)</a></small>
+                <P>Linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar
+                    programas,
+                    *a linguagem de programação não vai resolver o problema, quem vai resolver o problema é o
+                    desenvolvedor
+                    usando as linguagens, vale ressaltar que cada linguagem se sai melhor em determinados aspectos.</P>
+                <p><u>LINGUAGEM DE ALTO NÍVEL:</u> Estão mais próximas da linguagem humana do que a das máquinas
+                    (compostas
+                    por 0 e 1),feitas por pulsos elétricos.</p>
+                <p><u> HTML NÃO É UMA LINGUAGEM DE PROGRAMAÇÃO:</u> Pois não pode criar funcionalidades dinâmicas, HTML
+                    é
+                    basicamnete um arquivo de texto de marcação, que possui delimitadores que vão ser interpretados pelo
+                    navegador. Cada um desses delimitadores possui um comportamento, ou seja, apenas estrutura um
+                    conjunto
+                    de seções, o mesmo se aplica para um arquivo CSV.</p>
+
+                <h3>
+                    <center><u style="color: rgb(25, 0, 85);">INTRODUÇÃO AO HTML NA PRÁTICA</u></center>
+                </h3>
+                <small><a href="#Indice">(Voltar)</a></small>
+                <h5 id="tools">
+                    <CEnter><U style="color: rgb(25, 0, 85);">FERRAMENTAS UTILIZADAS</U></CEnter>
+                </H5>
+                <ul>
+                    <li><u>GOOGLE CHOME:</u> <a href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Site
+                            para
+                            Download do Chrome</a>, para download e instalação via CMD, usar o comando: winget install
+                        --id=Google.Chrome -e.</li>
+                    <li><u>INSPETOR DE ELEMENTOS:</u> Ferramenta do Chrome,<a
+                            href="https://www.youtube.com/watch?v=KMZKWCcTkm4" target="_blank">Vídeo explicativo do
+                            Chrome
+                            dev tools.</a></li>
+                    <li><u>VISUAL STUDIO CODE:</u><a href="https://code.visualstudio.com/" target="blank">Site para
+                            Download
+                            do VSCode</a>, para download e instalação via CMD, usar o comando: winget install
+                        --id=Microsoft.VisualStudioCode -e. <a href="https://www.youtube.com/watch?v=uxln1hT_Ev4"
+                            target="_blank">Vídeo explicativo do VSCode.</a></li>
+                    <li><u>EXTENÕES DO VISUALSTUDIO CODE: Emmet e Live Server.</u></li>
+                    <li><U>QUALQUER BLOCO DE NOTAS</U></li>
+                    <li><a href="https://www.w3schools.com/tags/ref_html_browsersupport.asp" target="_blank"> Este site
+                            mostra quais comandos certos navegadores suportam ou não.</a></li>
+                    <li><a href="https://www.w3schools.com/TAGS/default.asp" target="_blank">Lista de comandos HTML</a>
+                    </li>
+                </ul>
+
+                <h5 id="estrutura">
+                    <CEnter><U style="color: rgb(25, 0, 85);">ESTRUTURA BÁSICA DO HTML</U></CEnter>
+                </H5>
+                <ul>
+                    <li><u>
+                            <>index.html:
+                        </u> Indica que é a página inicial do site, é possível colocar outro nome, mas por boas
+                        práticaas,
+                        normalmente se usa esse.</li>
+                    <li><u>&lt;html&gt;&lt;/html&gt;:</u> Tudo o que estiver entre esses dois códigos faz parte do HTML,
+                        sendo o primeiro para abrir e o segundo para fechar todos os códigos.</li>
+                    <li><u>A estrutura do html é basicamente definida por "cabeça" e "corpo"</u></li>
+                    <li><u>&lt;head&gt;&lt;/head&gt</u> Tudo o que estiver entre esses dois códigos aparece nas guias
+                        (parte
+                        de cima do navegador), ex: no caso dessa página, o que está entre esses dois códigos é "meu
+                        primeiro
+                        HTML!(parte 1)"</li>
+                    <li><u>&lt;body&gt;&lt;/body&gt;</u> Dentro dessa tag estão todas as informações que devem aparecer
+                        na
+                        página do navegador, ou seja, tudo o que o leitor irá ver.</li>
+                    </u>
+                    <h5 id="tags">
+                        <CEnter><U style="color: rgb(25, 0, 85);">TAGS</U></CEnter>
+                    </H5>
+                    <li><u>&lt;center&gt;&lt;/center&gt;</u> Tudo o que fica entre essa tag fica centralizado na página.
+                    </li>
+                    <li><u>&lt;input type=""/&gt;</u> Ela se abre e se fecha, não precisando de outra para fechar como a
+                        maioria das tags, ela abre uma caixa para o usuário colocar alguma informação, o atributo
+                        type=""
+                        pode ser de texto (text) ou número (number).</li>
+                    <li><u>&lt;img&gt;&lt;/img&gt;</u> Adiciona uma imagem.</li>
+                    <li><u>&lt;hr size=&gt;:</u> Define uma liha horizontal na página, de uma ponta a outra, size
+                        determina
+                        o seu tamanho, podendo conter valores entre 0 100.</li>
+
+                    <h5 id="textos">
+                        <CEnter><U style="color: rgb(25, 0, 85);">TEXTOS</U></CEnter>
+                    </H5>
+                    <li><u>&lt;tittle&gt;&lt;/tittle&gt;</u> Definine o título principal da página. </li>
+                    <li><u>&lt;h1&gt;&lt;/h1&gt;</u> Define os títulos secundários da página, onde além de h1,temos
+                        h2;h3;h4;h5 e h6, formando uma ordem de títulos, de maior para o menor. </li>
+                    <li><u>&lt;p&GT;&LT;/p&GT;</u> Define um parágrafo.</li>
+                    <li><u>&lt;small&gt;&lt;/small&gt;</u> Define um pequeno texto.</li>
+                    <li><u>&lt;i&GT;&lt;/i&gt;</u> Toda a informação que estiver entre essas tags fica em
+                        <i>italico.</i>
+                    </li>
+                    <li><u>&lt;strong&gt;&lt;/strong&gt;</u> Toda a informação que esiver entre essas tags fica em
+                        <strong>negrito.</strong>
+                    </li>
+                    <li><u>&lt;u&gt;&lt;/u&gt;</u> Toda a informação que esiver entre essas tags fica <u>sublinhada.</u>
+                    </li>
+                    <li><u>&lt;blockquote&gt;&lt;blockquote&gt;</u> Usada para fazer uma referência no meio do texto,
+                        ela se
+                        destaca do restante do texto e fica centralizada.</li>
+
+                    <h5 id="listas">
+                        <CEnter><U style="color: rgb(25, 0, 85);">LISTAS</U></CEnter>
+                    </H5>
+                    <li><u>&lt;ol&gt;&lt;/ol&gt;</u> Define uma lista ordenada por números, igual ao índice desta
+                        página.
+                    </li>
+                    <li><u>&lt;ul&gt;&lt;/ul&gt;</u> Define uma lista não ordenada, ígual a essa lista de comandos.</li>
+                    <li><u>&lt;li&gt;&lt;/li&gt;</u> Define o ítem de uma lista ordenada ou não ordenada.</li>
+
+                    <h5 id="links">
+                        <CEnter><U style="color: rgb(25, 0, 85);">LINKS</U></CEnter>
+                    </H5>
+                    <li><u>&lt;a href="link" target="blank"&gt;descrição do link&lt;/a&gt;</u> Usamos essa tag para
+                        adicionar links, o atributo "target" define onde a página irá abrir, "blank" indica que elá irá
+                        abrir em uma nova guia, mas ao invéz de blank podemos usar "self", e a página abrirá na mesma
+                        guia.
+                    </li>
+                    <li><u>Uma boa prática é usar o blank para links fora do seu site, para manter ele mais tempo dentro
+                            do
+                            seu site.</u></li>
+
+                    <h5 id="atributos">
+                        <CEnter><U style="color: rgb(25, 0, 85);">ATRIBUTOS DE TAGS</U></CEnter>
+                    </H5>
+                    <li><u>São propriedades que uma tag pode ter, exitem atributos que são globais e genéricos, e outros
+                            que
+                            são específicos de cada tag.</u></li>
+                    <li><u>&lt;strong id&gt;&lt;/strong&gt;</u> id É um atributo identificador da tag strong, pois as
+                        linguagens de programação, como por exemplo java, podem ler o html, pegar um elemento específico
+                        e
+                        trocar o conteúdo dele, via programação ou linha de código.</li>
+                    <li><U>&LT; strong style="color blue;">&lt;/strong&gt;</U> O atributo style é utilizado para usar
+                        códigos de linguagem css (sistema ou forma de formatar o html, deixar ele mais bonito, trocar
+                        cores,
+                        etc.) dentro do html.</li>
+                    <li><u>&lt;img scr="" alt="" widht="" height=""</u> "scr" Define o caminho da imagem, podendo ser da
+                        internet ou do próprio computador, "alt" define uma pequena descrição da imagem, "width" a
+                        largura e
+                        "height" a altura.</li>
+
+                </ul>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <br>
+    </font>
+</body>
+
 </html>
-
